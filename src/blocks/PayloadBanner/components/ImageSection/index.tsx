@@ -1,15 +1,17 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import "./index.css"; // Ensure Tailwind is imported here
-import EveCollection from "../../layouts/CollectionSection/Component";
+// pages/index.tsx
+import React from 'react';
+import BigBanner from '../../layouts/BannerLayout3/Component';
 
 
-const root = ReactDOM.createRoot(document.getElementById("root")!);
+const IndexPage = () => {
+  return (
+    <BigBanner
+      backgroundImage="https://cdn.prod.website-files.com/66d5c8a0f16078270af4fa77/66d5c8b9f623192896445d68_Image-37.jpg"
+      title="NEW ARRIVAL"
+      subtitle="We offer asafgw3rgrege timeless adornment for those who seek both beauty and grace in meaning."
+      buttonText="SHOP NOW"
+    />
+  );
+};
 
-root.render(
-  <React.StrictMode>
-    <div className="min-h-screen bg-white">
-      <EveCollection/>
-    </div>
-  </React.StrictMode>
-);
+export default IndexPage;
